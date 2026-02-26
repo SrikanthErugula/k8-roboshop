@@ -1,0 +1,9 @@
+apiVersion: v1  # it is common for all resources 
+kind: Namespace  # type of resources 
+metadata:
+  name: roboshop
+  labels:  # LABELS ARE MANDATORY 
+    environment: development
+    project: roboshop
+
+# upto here is called skelton syntax   #sess-58
