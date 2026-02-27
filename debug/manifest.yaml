@@ -9,5 +9,5 @@ metadata:
 spec:
   containers:
   - name: debug
-    image: joindevops/debug:v1
+    image: dockerfilelinux/debug:v1
     imagePullPolicy: Always  # it means take latest changes always vunte it will take 
