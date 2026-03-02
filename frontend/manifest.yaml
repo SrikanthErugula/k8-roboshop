@@ -7,7 +7,7 @@ kind: ConfigMap
 metadata:
   name: frontend
   namespace: roboshop
-data:
+data:  # sess-61
   nginx.conf: |
     user nginx;
     worker_processes auto;
@@ -103,11 +103,11 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: jdockerfilelinux/frontend:v1
+        image: dockerfilelinux/frontend:v1
         imagePullPolicy: Always
         ports:
         - name: liveness-port
-          containerPort: 8080
+          containerPort: 8080 # initial 80 vunde so now w set 8080 bcz config lo 8080 
         readinessProbe:
           httpGet:
             path: /
@@ -120,7 +120,7 @@ spec:
             port: liveness-port
           failureThreshold: 1
           periodSeconds: 15
-        volumeMounts:
+        volumeMounts:             #  below volume is mounting to specific container 
         - name: nginx-config
           mountPath: /etc/nginx/nginx.conf
           subPath: nginx.conf
