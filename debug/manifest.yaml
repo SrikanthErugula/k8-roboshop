@@ -10,4 +10,4 @@ spec:
   containers:
   - name: debug
     image: dockerfilelinux/debug:v1
-    imagePullPolicy: Always  # it means take latest changes always vunte it will take 
+    imagePullPolicy: Always  # it means take latest changes always vunte it will take for run debug container always
