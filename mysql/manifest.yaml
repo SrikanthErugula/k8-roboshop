@@ -52,15 +52,15 @@ spec:
         #     port: 3306
         #   initialDelaySeconds: 20
         #   periodSeconds: 5
-        volumeMounts:        # these volume for container level 
+        volumeMounts:        # these volume for container level access
         - name: mysql-config
           mountPath: /etc/mysql/conf.d/my.cnf
           subPath: my.cnf
 
-      volumes:  # these volume for POD level
+      volumes:  # these volume for POD level acess
         - name: mysql-config
           configMap:
-            name: mysql
+            name: mysql  # same should be same at top vunna pod 
 
 
 # service code for connection 

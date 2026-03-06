@@ -1,6 +1,6 @@
 
 
-# Configuration code by using config  for dependecies
+# Configuration code creation by using config  for dependecies
 
 apiVersion: v1
 kind: ConfigMap
@@ -107,7 +107,7 @@ spec:
         imagePullPolicy: Always
         ports:
         - name: liveness-port
-          containerPort: 8080 # initial 80 vunde so now w set 8080 bcz config lo 8080 
+          containerPort: 8080 # initial 80 vunde so now w set 8080 bcz config lo 8080 server  listen lo 
         readinessProbe:
           httpGet:
             path: /
