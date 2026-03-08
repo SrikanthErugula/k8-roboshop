@@ -39,8 +39,8 @@ spec:
         livenessProbe:
           tcpSocket:
             port: 27017
-          initialDelaySeconds: 5  # based on app and project requirment 
-          periodSeconds: 5
+          initialDelaySeconds: 15  # based on app and project requirment 
+          periodSeconds: 15
 
 
 # Service code bcz cata will connect to mongodb so for that we need set up service file 
