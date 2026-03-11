@@ -10,6 +10,7 @@ data:
   REDIS_URL: "redis://redis:6379"
   MONGO_URL: "mongodb://mongodb:27017/users"
 
+---
 # Basic code for user
 apiVersion: apps/v1
 kind: Deployment
@@ -62,7 +63,7 @@ spec:
 
 
 # Service code bcz user will connect to mongodb so for that we need set up service file 
-
+---
 apiVersion: v1
 kind: Service
 metadata:

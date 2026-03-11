@@ -10,7 +10,7 @@ data:  # so this the file for mysql data ni read kosam
   my.cnf: |
     [mysqld]
     innodb_redo_log_capacity = 2G
-
+---
 # mysql basic code 
 apiVersion: apps/v1
 kind: Deployment
@@ -62,7 +62,7 @@ spec:
           configMap:
             name: mysql  # same should be same at top vunna pod 
 
-
+---
 # service code for connection 
 apiVersion: v1
 kind: Service

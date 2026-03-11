@@ -15,6 +15,7 @@ data:
   AMQP_USER: "roboshop"
   AMQP_PASS: "roboshop123"
 
+---
 # Basic code for PAYMENT
 apiVersion: apps/v1
 kind: Deployment
@@ -65,6 +66,7 @@ spec:
           failureThreshold: 1
           periodSeconds: 15
 
+---
 # Service code bcz user will connect to mongodb so for that we need set up service file 
 apiVersion: v1
 kind: Service

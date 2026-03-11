@@ -38,7 +38,7 @@ spec:
             port: 6379
           initialDelaySeconds: 5
           periodSeconds: 5
-
+---
 # Service code bcz redis will connect to mongodb so for that we need set up service file 
 apiVersion: v1
 kind: Service

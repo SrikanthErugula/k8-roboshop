@@ -10,7 +10,7 @@ data:
   CART_ENDPOINT: "cart:8080"
   DB_HOST: "mysql"
 
-
+---
 # Basic code for SHIPPING 
 apiVersion: apps/v1
 kind: Deployment
@@ -61,6 +61,7 @@ spec:
           failureThreshold: 1
           periodSeconds: 15
 
+---
 # Service code bcz user will connect to mongodb so for that we need set up service file 
 apiVersion: v1
 kind: Service

@@ -46,7 +46,7 @@ spec:
             port: 5672
           initialDelaySeconds: 20
           periodSeconds: 5
-
+---
 # Service for connection established 
 apiVersion: v1
 kind: Service
