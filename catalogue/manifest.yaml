@@ -8,7 +8,7 @@ metadata:
 data:
   MONGO: "true"
   MONGO_URL: "mongodb://mongodb:27017/catalogue"
-
+---
 #cata code basic as below 
 apiVersion: apps/v1
 kind: Deployment
@@ -59,7 +59,7 @@ spec:
           failureThreshold: 10
           periodSeconds: 15
 
-
+---
 # Service code bcz cata will connect to mongodb so for that we need set up service file 
 apiVersion: v1
 kind: Service
