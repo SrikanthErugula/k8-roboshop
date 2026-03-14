@@ -58,8 +58,8 @@ spec:
           httpGet:
             path: /health
             port: liveness-port
-          failureThreshold: 1
-          periodSeconds: 15
+          failureThreshold: 2
+          periodSeconds: 20
 
 ---
 # Service code bcz user will connect to mongodb so for that we need set up service file 
