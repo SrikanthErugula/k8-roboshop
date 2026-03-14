@@ -48,18 +48,18 @@ spec:
         ports:
         - name: liveness-port
           containerPort: 8080
-        readinessProbe:
-          httpGet:
-            path: /health
-            port: liveness-port
-          failureThreshold: 1
-          periodSeconds: 15
-        livenessProbe:
-          httpGet:
-            path: /health
-            port: liveness-port
-          failureThreshold: 2
-          periodSeconds: 20
+        # readinessProbe:
+        #   httpGet:
+        #     path: /health
+        #     port: liveness-port
+        #   failureThreshold: 1
+        #   periodSeconds: 15
+        # livenessProbe:
+        #   httpGet:
+        #     path: /health
+        #     port: liveness-port
+        #   failureThreshold: 2
+        #   periodSeconds: 20
 
 ---
 # Service code bcz user will connect to mongodb so for that we need set up service file 
