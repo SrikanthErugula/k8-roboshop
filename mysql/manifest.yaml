@@ -45,12 +45,12 @@ spec:
         readinessProbe:
           tcpSocket:
             port: 3306
-          initialDelaySeconds: 10
-          periodSeconds: 10
+          initialDelaySeconds: 5
+          periodSeconds: 5
         livenessProbe:
           tcpSocket:
             port: 3306
-          initialDelaySeconds: 20
+          initialDelaySeconds: 50
           periodSeconds: 5
         volumeMounts:        # these volume for container level access
         - name: mysql-config
