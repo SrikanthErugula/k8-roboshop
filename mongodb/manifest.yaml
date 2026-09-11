@@ -43,18 +43,18 @@ spec:
           periodSeconds: 15
 
 
-# Service code bcz cata will connect to mongodb so for that we need set up service file 
-apiVersion: v1
-kind: Service
-metadata:
-  name: mongodb # ikkada name DNS ga cata lo config map lo use avuthuni 
-  namespace: roboshop
-spec:
-  selector:
-    project: roboshop
-    component: mongodb
-    tier: db
-  ports:
-    - protocol: TCP
-      port: 27017 # service port  # for no confusion kosam we have to given same ports
-      targetPort: 27017 # container port
+# # Service code bcz cata will connect to mongodb so for that we need set up service file 
+# apiVersion: v1
+# kind: Service
+# metadata:
+#   name: mongodb # ikkada name DNS ga cata lo config map lo use avuthuni 
+#   namespace: roboshop
+# spec:
+#   selector:
+#     project: roboshop
+#     component: mongodb
+#     tier: db
+#   ports:
+#     - protocol: TCP
+#       port: 27017 # service port  # for no confusion kosam we have to given same ports
+#       targetPort: 27017 # container port
